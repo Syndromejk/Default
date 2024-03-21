@@ -1,0 +1,579 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Montserrat sans-serif;
+    background-color:#F9F9F9;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    text-align: left;
+    overflow-x: hidden;
+  }
+  
+  .glesson{
+    width: 150px;
+    height: auto;
+    top: 15px;
+    left: 0.45px;
+  }
+
+  nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  li {
+    display: inline-block;
+    position: relative;
+   
+  }
+  
+  
+  .dropdown ul li a {
+    display: block;
+  }
+  
+  
+  ul li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: calc(100% + 2px);
+    padding: 10px;
+    left: 0;
+  }
+  
+  
+  ul li:hover ul.dropdown {
+    display: block;
+  }
+  
+  
+  ul li ul.dropdown li {
+    display: block;
+  }
+  
+  
+  .dropdown-btn {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(31, 53, 61, 1);
+  }
+  
+  
+  nav a,
+  .dropdown-btn {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  nav a img {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  
+  nav a:hover,
+  .dropdown-btn:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .login-btn {
+    border-radius: 60px;
+    background-color: white;
+    color: #548bab;
+    border: 1px solid #548bab;
+    padding: 14px 20px;
+    margin: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    height: 47px;
+    font-family: Montserrat sans-serif;
+  }
+  
+  
+  .register-btn {
+    border-radius: 60px;
+    background-color: #548bab;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    margin: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 160px;
+    height: 47px;
+    font-family: Montserrat sans-serif;
+  }
+  
+  .dropdown{
+    background-color: white;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* -------job listing-------- */
+  
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    background-color: #F9F9F9;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  
+  header {
+    width: 100%;
+    padding: 0px 112px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  nav {
+    background-color: white;
+    height: 101px;
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .btn-exit{
+    width: 110px;
+    height: 40px;
+    top: 27px;
+    left: 1121px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 50px;
+    border: 2px solid #548BAB;
+    background-color: white;
+    color: #548BAB;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+  }
+  .btn-exit:hover {
+    background-color: #548BAB;
+    color: white;
+  }
+  
+  
+  .btn-exit:active {
+    background-color: #0E6EB8;
+    border-color: #0E6EB8;
+  }
+  
+  /* -------job listing-------- */
+  
+  .job-listing {
+    width: 100%;
+    max-width: 497px;
+    margin: 2px 0 0;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjust as needed */
+    overflow-y: scroll;
+    height: 89vh;
+  
+  
+    /* WebKit */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -webkit-scrollbar {
+      display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+  }
+  }
+  
+  
+  .job-title {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Montserrat sans-serif, Times, serif;
+    font-weight: 600;
+    line-height: 27px;
+  }
+  
+  
+  .location {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family:  Montserrat sans-serif, Times, serif;
+    font-weight: 600;
+    line-height: 21px;
+    color: #595959;
+
+  
+  }
+  
+  
+  .salary {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family:  Montserrat sans-serif, Times, serif;
+    font-weight: 600;
+    line-height: 21px;
+    color:  #595959;
+
+  
+  }
+  /* Styling for the line */
+  .underline {
+    border: none;
+    border-top: 1px solid #F2F1EE; 
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: -35px;
+    width: 510px;
+  }
+  
+  
+  .job-details {
+    margin-bottom: 20px;
+  }
+  
+  .job-details ul {
+    padding-inline-start: 20px; /* Adjust this value as needed */
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .subheading {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 21px;
+    font-family: Montserrat sans-serif;
+    color: #000000;
+  }
+  
+  .subheading_par {
+    font-size: 14px;
+    /* margin-top: 30px; */
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: Inter sans-serif, Times, serif;
+  }
+  
+  
+  
+  
+  /* -------------------------- */
+  
+  .container {
+    position: relative; /* Ensure the container is positioned relatively */
+    display: flex;
+  }
+  
+  .rContainer {
+    width: 863px;
+    position: relative;
+    margin-right: auto;
+    padding: 40px;
+  }
+  
+  .back{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+    line-height: 35.56px;
+    letter-spacing: -0.02em;
+  }
+  .steps {
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #aeaeae;
+    padding-bottom: 5px;
+    margin-right: -130px;
+  }
+  
+  .steps::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%; /* Position at the center */
+    width: 50%; /* Half the width */
+    height: 3px; /* Same height as the original border */
+    background-color: #C9DFEE; /* Color of the border */
+  }
+  
+   
+  .back_steps {
+    display: flex;
+    justify-content: space-between;
+  }
+   
+  /* ------------------------------- */
+  
+  .applying {
+    padding-top: 5%;
+    font-family: Montserrat sans-serif, Times, serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #12263F;
+  }
+  .auto{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+  
+  }
+  
+  
+  .EmailAdd {
+    font-family: Montserrat sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-bottom: 10px;
+  }
+  
+  .inputEmailAdd {
+    border: 1px solid #AEAEAA;
+    width: 350px;
+    height: 40px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 10px; 
+  }
+  
+  .inputEmailContact {
+    display: flex;
+    gap: 15px;
+    padding-top: 5%;
+    margin-top: 30px;
+  }
+
+
+/* *********************************************************** */
+
+
+.button-container {
+  display: flex;
+ justify-content: space-around;
+ gap: 50px;
+ margin-top: 3.5vh;
+}
+
+.custom-button {
+  width: 192.61px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 10px; /* Added gap */
+  position: relative; /* Ensure relative positioning */
+}
+
+
+.custom-button:hover {
+  border-color: #548BAB;
+}
+
+
+.seek-image,
+.linked-image,
+.fb-image,
+.google-image {
+  max-width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 45%; /* Adjusted top position */
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.seek-image {
+  left: 30%; /* Adjusted left position */
+}
+
+.linked-image {
+  left: 20%; /* Adjusted left position */
+}
+
+.fb-image {
+  left: 15%; /* Adjusted left position */
+}
+
+.google-image {
+  left: 25%; /* Adjusted left position */
+}
+
+.custom-button h4 {
+  font-family: 'Cerebri Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19.05px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #283E59;
+  margin-top: 5px;
+  padding-left: 30px; /* Added padding-left for space */
+  z-index: 0;
+}
+
+  
+  .line{
+    width: 940px;
+    margin-top: 30px;
+    border: 1px solid #E5E6E2;
+  
+  }
+  /*---------------------------------*/
+  .apply{
+    text-decoration: none;
+    font-family: Montserrat sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    letter-spacing: -0.02em;
+    height: 23px;
+    padding-top: 5%;
+    color: #12263F;
+  } 
+  
+  
+  .EmailAddress {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    
+  }
+
+  /*---------------------------*/
+
+  .two-button{
+    width: Hug (338px)px;
+    height: Hug (40px)px;
+    margin-top: 40px;
+    gap: 10px;
+    opacity: 0px;
+  }
+  .continue, .guest{
+    width: 164px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid  #548BAB;
+    color: #548BAB;
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .two-button button {
+    margin: 0 5px; /* Adjust the gap as needed */
+  }
+  .guest:hover {
+    background-color: #548BAB;
+    color: white;
+  }
+  .guest:active {
+    background-color: #0E6EB8;
+    border-color: #0E6EB8;
+  }
+  .continue:hover {
+    background-color: #548BAB;
+    color: white;
+  }
+  .continue:active {
+    background-color: #0E6EB8;
+    border-color: #0E6EB8;
+  }
+
+  /* ******************************************************** */
+
+  .bott {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bott1 {
+    margin-right: auto;
+    width: auto;
+    height: 50px;
+    margin-left: 50px;
+  }
+  
+  .bott2 {
+    margin-left: auto;
+    margin-right: 50px ;
+  }
